@@ -10,8 +10,11 @@ import com.github.wegoo.cain.asn1.ASN1Sequence;
 import com.github.wegoo.cain.asn1.DERSequence;
 
 /**
- * SM2Cipher ::= SEQUENCE { x INTEGER, --c1 x y INTEGER, --c1 y hash octet string,  --c3 cipherText
- * octet string  --c2 }
+ * SM2Cipher ::= SEQUENCE {
+ *    x INTEGER, --c1 x
+ *    y INTEGER, --c1 y
+ *    hash octet string,  --c3
+ *    cipherText octet string  --c2 }
  */
 
 public class SM2Cipher extends ASN1Object {
